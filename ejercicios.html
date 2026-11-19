@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios | ENCORE - Grupo 4</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="header-container">
+        <div class="logo-area">
+            <a href="index.html" class="logo-link" aria-label="Ir al inicio">
+                <img src="imagenes/logus.jpg" alt="Logotipo ENCORE Grupo 4" class="logo-img">
+            </a>
+            <div class="brand-text">
+                <h1>ENCORE</h1>
+                <span>GRUPO 4 | MATEMÁTICAS</span>
+                <p>Aprender matemáticas es descubrir nuevas posibilidades.</p>
+            </div>
+        </div>
+        <nav class="navbar" aria-label="Menú principal">
+            <a href="index.html"><span>⌂</span> Inicio</a>
+            <a href="contenido.html"><span>☰</span> Contenido</a>
+            <a href="recursos.html"><span>∑</span> Recursos y fórmulas</a>
+            <a href="ejemplos.html"><span>✎</span> Ejemplos</a>
+            <a href="ejercicios.html" class="active" aria-current="page"><span>✚</span> Ejercicios</a>
+            <a href="videos.html"><span>▶</span> Videos</a>
+            <a href="examen.html"><span>✔</span> Ponte a prueba</a>
+        </nav>
+    </div>
+</header>
+
+<main class="main-content">
+<section class="types-section">
+    <div class="section-title">
+        <span class="hero-badge">PRACTICA LO APRENDIDO</span>
+        <h2>Ejercicios de regla de tres</h2>
+        <p>Resuelve cada problema, escribe tu respuesta y verifícala. Si te atascas, revisa la solución paso a paso.</p>
+    </div>
+
+    <div class="progreso-box">
+        <strong>Aciertos: <span id="aciertos">0</span> / <span id="total-ejercicios">8</span></strong>
+        <div class="barra" aria-hidden="true"><div id="barra-progreso"></div></div>
+        <button type="button" id="reiniciar" class="boton-secundario">Reiniciar</button>
+    </div>
+
+    <div class="cards-grid">
+<article class="card ejemplo-card card-directa">
+    <div class="card-icon">📈</div>
+    <h3>PROPORCIONALIDAD DIRECTA</h3>
+    <p class="card-intro">Fórmula: x = (b × c) / a</p>
+<div class="ejemplo ejercicio" data-tipo="directa" data-respuesta="32">
+    <h4>Ejercicio 1</h4>
+    <p class="enunciado">Cinco kilogramos de manzanas cuestan S/ 20. ¿Cuánto costarán 8 kilogramos?</p>
+    <div class="dato">5 kg → S/ 20</div><div class="dato">8 kg → S/ x</div>
+    <form class="ejercicio-form" novalidate>
+        <label for="dir-1">x =</label>
+        <input id="dir-1" type="text" inputmode="decimal" autocomplete="off" placeholder="Tu respuesta">
+        <span class="unidad">soles</span>
+        <button type="submit">Verificar</button>
+    </form>
+    <p class="feedback" aria-live="polite"></p>
+    <details><summary>Ver solución</summary><p>x = (20 × 8) / 5 = 160 / 5 = 32 soles</p></details>
+</div>
+<div class="ejemplo ejercicio" data-tipo="directa" data-respuesta="75">
+    <h4>Ejercicio 2</h4>
+    <p class="enunciado">Un grifo llena 30 litros de agua en 6 minutos. ¿Cuántos litros llenará en 15 minutos?</p>
+    <div class="dato">30 litros → 6 minutos</div><div class="dato">x litros → 15 minutos</div>
+    <form class="ejercicio-form" novalidate>
+        <label for="dir-2">x =</label>
+        <input id="dir-2" type="text" inputmode="decimal" autocomplete="off" placeholder="Tu respuesta">
+        <span class="unidad">litros</span>
+        <button type="submit">Verificar</button>
+    </form>
+    <p class="feedback" aria-live="polite"></p>
+    <details><summary>Ver solución</summary><p>x = (30 × 15) / 6 = 450 / 6 = 75 litros</p></details>
+</div>
+<div class="ejemplo ejercicio" data-tipo="directa" data-respuesta="300">
+    <h4>Ejercicio 3</h4>
+    <p class="enunciado">Una impresora imprime 120 hojas en 8 minutos. ¿Cuántas hojas imprimirá en 20 minutos?</p>
+    <div class="dato">120 hojas → 8 minutos</div><div class="dato">x hojas → 20 minutos</div>
+    <form class="ejercicio-form" novalidate>
+        <label for="dir-3">x =</label>
+        <input id="dir-3" type="text" inputmode="decimal" autocomplete="off" placeholder="Tu respuesta">
+        <span class="unidad">hojas</span>
+        <button type="submit">Verificar</button>
+    </form>
+    <p class="feedback" aria-live="polite"></p>
+    <details><summary>Ver solución</summary><p>x = (120 × 20) / 8 = 2400 / 8 = 300 hojas</p></details>
+</div>
+<div class="ejemplo ejercicio" data-tipo="directa" data-respuesta="625">
+    <h4>Ejercicio 4</h4>
+    <p class="enunciado">Una receta usa 250 g de harina para 10 panes. ¿Cuántos gramos de harina se necesitan para 25 panes?</p>
+    <div class="dato">250 g → 10 panes</div><div class="dato">x g → 25 panes</div>
+    <form class="ejercicio-form" novalidate>
+        <label for="dir-4">x =</label>
+        <input id="dir-4" type="text" inputmode="decimal" autocomplete="off" placeholder="Tu respuesta">
+        <span class="unidad">gramos</span>
+        <button type="submit">Verificar</button>
+    </form>
+    <p class="feedback" aria-live="polite"></p>
+    <details><summary>Ver solución</summary><p>x = (250 × 25) / 10 = 6250 / 10 = 625 gramos</p></details>
+</div>
+</article>
+<article class="card ejemplo-card card-inversa">
+    <div class="card-icon">📉</div>
+    <h3>PROPORCIONALIDAD INVERSA</h3>
+    <p class="card-intro">Fórmula: x = (a × b) / c</p>
+<div class="ejemplo ejercicio" data-tipo="inversa" data-respuesta="5">
+    <h4>Ejercicio 1</h4>
+    <p class="enunciado">Seis obreros terminan una obra en 10 días. ¿En cuántos días la terminarán 12 obreros?</p>
+    <div class="dato">6 obreros → 10 días</div><div class="dato">12 obreros → x días</div>
+    <form class="ejercicio-form" novalidate>
+        <label for="inv-1">x =</label>
+        <input id="inv-1" type="text" inputmode="decimal" autocomplete="off" placeholder="Tu respuesta">
+        <span class="unidad">días</span>
+        <button type="submit">Verificar</button>
+    </form>
+    <p class="feedback" aria-live="polite"></p>
+    <details><summary>Ver solución</summary><p>x = (6 × 10) / 12 = 60 / 12 = 5 días</p></details>
+</div>
+<div class="ejemplo ejercicio" data-tipo="inversa" data-respuesta="3">
+    <h4>Ejercicio 2</h4>
+    <p class="enunciado">Un automóvil que viaja a 60 km/h tarda 4 horas en llegar a su destino. ¿Cuántas horas tardará a 80 km/h?</p>
+    <div class="dato">60 km/h → 4 horas</div><div class="dato">80 km/h → x horas</div>
+    <form class="ejercicio-form" novalidate>
+        <label for="inv-2">x =</label>
+        <input id="inv-2" type="text" inputmode="decimal" autocomplete="off" placeholder="Tu respuesta">
+        <span class="unidad">horas</span>
+        <button type="submit">Verificar</button>
+    </form>
+    <p class="feedback" aria-live="polite"></p>
+    <details><summary>Ver solución</summary><p>x = (60 × 4) / 80 = 240 / 80 = 3 horas</p></details>
+</div>
+<div class="ejemplo ejercicio" data-tipo="inversa" data-respuesta="4">
+    <h4>Ejercicio 3</h4>
+    <p class="enunciado">Ocho grifos iguales llenan un tanque en 6 horas. ¿Cuántas horas tardarán 12 grifos?</p>
+    <div class="dato">8 grifos → 6 horas</div><div class="dato">12 grifos → x horas</div>
+    <form class="ejercicio-form" novalidate>
+        <label for="inv-3">x =</label>
+        <input id="inv-3" type="text" inputmode="decimal" autocomplete="off" placeholder="Tu respuesta">
+        <span class="unidad">horas</span>
+        <button type="submit">Verificar</button>
+    </form>
+    <p class="feedback" aria-live="polite"></p>
+    <details><summary>Ver solución</summary><p>x = (8 × 6) / 12 = 48 / 12 = 4 horas</p></details>
+</div>
+<div class="ejemplo ejercicio" data-tipo="inversa" data-respuesta="20">
+    <h4>Ejercicio 4</h4>
+    <p class="enunciado">Cinco máquinas producen un pedido en 12 días. ¿Cuántos días tardarán 3 máquinas?</p>
+    <div class="dato">5 máquinas → 12 días</div><div class="dato">3 máquinas → x días</div>
+    <form class="ejercicio-form" novalidate>
+        <label for="inv-4">x =</label>
+        <input id="inv-4" type="text" inputmode="decimal" autocomplete="off" placeholder="Tu respuesta">
+        <span class="unidad">días</span>
+        <button type="submit">Verificar</button>
+    </form>
+    <p class="feedback" aria-live="polite"></p>
+    <details><summary>Ver solución</summary><p>x = (5 × 12) / 3 = 60 / 3 = 20 días</p></details>
+</div>
+</article>
+    </div>
+</section>
+</main>
+
+<footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-column">
+            <h3 class="footer-title">ENCORE Blog</h3>
+            <p>Un espacio educativo dedicado al aprendizaje y desarrollo de conocimientos matemáticos mediante recursos digitales e interactivos.</p>
+            <a href="index.html" class="footer-link">Conoce nuestro proyecto →</a>
+        </div>
+        <div class="footer-column">
+            <h3 class="footer-title">Contáctanos</h3>
+            <ul class="footer-list">
+                <li><span class="footer-icon">👥</span>Grupo N° 4</li>
+                <li><span class="footer-icon">📚</span>Proyecto académico</li>
+                <li><span class="footer-icon">🏛️</span>Universidad Privada de Trujillo</li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3 class="footer-title">Información</h3>
+            <ul class="footer-list">
+                <li><a href="index.html">Sobre ENCORE</a></li>
+                <li><a href="contenido.html">Contenido del curso</a></li>
+                <li><a href="recursos.html">Recursos educativos</a></li>
+                <li><a href="ejemplos.html">Desarrollo de ejemplos</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3 class="footer-title">Enlaces de Interés</h3>
+            <ul class="footer-list">
+                <li><a href="recursos.html">Fórmulas matemáticas</a></li>
+                <li><a href="ejemplos.html">Ejercicios resueltos</a></li>
+                <li><a href="ejercicios.html">Practica lo aprendido</a></li>
+                <li><a href="videos.html">Videos educativos</a></li>
+                <li><a href="examen.html">Pon a prueba tus resultados</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="footer-bottom-container">
+            <div class="footer-academic">
+                <p><strong>Trabajo Académico</strong></p>
+                <p>Desarrollado por: Grupo N° 4</p>
+                <p>Curso: Desarrollo de Entornos Web</p>
+                <p>Universidad Privada de Trujillo</p>
+            </div>
+            <div class="footer-copyright">
+                <p>ENCORE | Grupo 4</p>
+                <p>&copy; 2026 - Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pon a prueba lo APRENDIDO | ENCORE - Grupo 4</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="header-container">
+        <div class="logo-area">
+            <a href="index.html" class="logo-link" aria-label="Ir al inicio">
+                <img src="imagenes/logus.jpg" alt="Logotipo ENCORE Grupo 4" class="logo-img">
+            </a>
+            <div class="brand-text">
+                <h1>ENCORE</h1>
+                <span>GRUPO 4 | MATEMÁTICAS</span>
+                <p>Aprender matemáticas es descubrir nuevas posibilidades.</p>
+            </div>
+        </div>
+        <nav class="navbar" aria-label="Menú principal">
+            <a href="index.html"><span>⌂</span> Inicio</a>
+            <a href="contenido.html"><span>☰</span> Contenido</a>
+            <a href="recursos.html"><span>∑</span> Recursos y fórmulas</a>
+            <a href="ejemplos.html"><span>✎</span> Ejemplos</a>
+            <a href="ejercicios.html"><span>✚</span> Ejercicios</a>
+            <a href="videos.html"><span>▶</span> Videos</a>
+            <a href="examen.html" class="active" aria-current="page"><span>✔</span> Ponte a prueba</a>
+        </nav>
+    </div>
+</header>
+
+<main class="main-content">
+<section class="types-section">
+    <div class="section-title">
+        <span class="hero-badge">EVALUACIÓN</span>
+        <h2>Pon a prueba lo APRENDIDO</h2>
+        <p>Evaluación de Matemática &mdash; Razonamiento aritmético.<br>
+           Tema: Regla de tres simple (directa e inversa) y regla de tres compuesta.</p>
+    </div>
+
+    <div class="examen-info">
+        <strong>Instrucciones:</strong> lee detenidamente cada problema, identifica las magnitudes que intervienen
+        (directa o inversamente proporcionales), desarrolla el procedimiento en tu cuaderno y marca la alternativa
+        correcta. Cada pregunta vale 1 punto (nota máxima: 20).
+    </div>
+
+    <div class="progreso-box">
+        <strong>Respondidas: <span id="respondidas">0</span> / <span id="total-preguntas">20</span></strong>
+        <div class="barra" aria-hidden="true"><div id="barra-examen"></div></div>
+    </div>
+
+    <form id="examen" class="examen" novalidate>
+<div class="parte"><h3>PARTE I: REGLA DE TRES SIMPLE (Preguntas 1 al 10)</h3><p>Identifica si las magnitudes son Directamente Proporcionales (DP) o Inversamente Proporcionales (IP).</p></div>
+<article class="pregunta" id="p1" data-correcta="c">
+    <h4>Pregunta 1</h4>
+    <p class="enunciado">Si 6 cuadernos cuestan S/ 45, ¿cuánto se pagará por 14 cuadernos de la misma calidad?</p>
+    <div class="opciones">
+            <label><input type="radio" name="q1" value="a"><span class="letra">a)</span> S/ 95</label>
+            <label><input type="radio" name="q1" value="b"><span class="letra">b)</span> S/ 100</label>
+            <label><input type="radio" name="q1" value="c"><span class="letra">c)</span> S/ 105</label>
+            <label><input type="radio" name="q1" value="d"><span class="letra">d)</span> S/ 110</label>
+            <label><input type="radio" name="q1" value="e"><span class="letra">e)</span> S/ 115</label>
+    </div>
+    <div class="solucion">
+        <p class="resp-correcta"><strong>Respuesta correcta:</strong> c) S/ 105</p>
+        <p class="nota">Las magnitudes son directamente proporcionales (DP).</p>
+        <p class="calculo">x = (45 × 14) / 6 = 630 / 6 = 105</p>
+    </div>
+</article>
+<article class="pregunta" id="p2" data-correcta="b">
+    <h4>Pregunta 2</h4>
+    <p class="enunciado">Un automóvil que viaja a una velocidad constante de 80 km/h tarda 6 horas en llegar de una ciudad a otra. Si aumenta su velocidad a 120 km/h, ¿en cuánto tiempo hará el mismo recorrido?</p>
+    <div class="opciones">
+            <label><input type="radio" name="q2" value="a"><span class="letra">a)</span> 3 horas</label>
+            <label><input type="radio" name="q2" value="b"><span class="letra">b)</span> 4 horas</label>
+            <label><input type="radio" name="q2" value="c"><span class="letra">c)</span> 4,5 horas</label>
+            <label><input type="radio" name="q2" value="d"><span class="letra">d)</span> 5 horas</label>
+            <label><input type="radio" name="q2" value="e"><span class="letra">e)</span> 9 horas</label>
+    </div>
+    <div class="solucion">
+        <p class="resp-correcta"><strong>Respuesta correcta:</strong> b) 4 horas</p>
+        <p class="nota">Las magnitudes son inversamente proporcionales (IP). A más velocidad, menos tiempo.</p>
+        <p class="calculo">x = (80 × 6) / 120 = 480 / 120 = 4</p>
+    </div>
+</article>
+<article class="pregunta" id="p3" data-correcta="b">
+    <h4>Pregunta 3</h4>
+    <p class="enunciado">Una cuadrilla de 15 obreros puede construir un muro en 24 días. Si se contratan 5 obreros más con el mismo rendimiento, ¿en cuántos días terminarán dicho muro?</p>
+    <div class="opciones">
+            <label><input type="radio" name="q3" value="a"><span class="letra">a)</span> 16 días</label>
+            <label><input type="radio" name="q3" value="b"><span class="letra">b)</span> 18 días</label>
+            <label><input type="radio" name="q3" value="c"><span class="letra">c)</span> 20 días</label>
+            <label><input type="radio" name="q3" value="d"><span class="letra">d)</span> 30 días</label>
+            <label><input type="radio" name="q3" value="e"><span class="letra">e)</span> 32 días</label>
+    </div>
+    <div class="solucion">
+        <p class="resp-correcta"><strong>Respuesta correcta:</strong> b) 18 días</p>
+        <p class="nota">Las magnitudes son inversamente proporcionales (IP). Ahora son 15 + 5 = 20 obreros.</p>
+        <p class="calculo">x = (15 × 24) / 20 = 360 / 20 = 18</p>
+    </div>
+</article>
+<article class="pregunta" id="p4" data-correcta="c">
+    <h4>Pregunta 4</h4>
+    <p class="enunciado">Para preparar 12 litros de refresco de maracuyá se necesitan 3,6 kg de fruta. ¿Cuántos kilogramos de maracuyá se requerirán para preparar 35 litros del mismo refresco?</p>
+    <div class="opciones">
+            <label><input type="radio" name="q4" value="a"><span class="letra">a)</span> 9,5 kg</label>
+            <label><input type="radio" name="q4" value="b"><span class="letra">b)</span> 10 kg</label>
+            <label><input type="radio" name="q4" value="c"><span class="letra">c)</span> 10,5 kg</label>
+            <label><input type="radio" name="q4" value="d"><span class="letra">d)</span> 11,5 kg</label>
+            <label><input type="radio" name="q4" value="e"><span class="letra">e)</span> 12 kg</label>
+    </div>
+    <div class="solucion">
+        <p class="resp-correcta"><strong>Respuesta correcta:</strong> c) 10,5 kg</p>
+        <p class="nota">Las magnitudes son directamente proporcionales (DP).</p>
+        <p class="calculo">x = (3,6 × 35) / 12 = 126 / 12 = 10,5</p>
+    </div>
+</article>
+<article class="pregunta" id="p5" data-correcta="c">
+    <h4>Pregunta 5</h4>
+    <p class="enunciado">Un ganadero tiene forraje suficiente para alimentar a sus 40 vacas durante 30 días. Si vende 10 vacas, ¿para cuántos días le alcanzará el mismo alimento?</p>
+    <div class="opciones">
+            <label><input type="radio" name="q5" value="a"><span class="letra">a)</span> 22,5 días</label>
+            <label><input type="radio" name="q5" value="b"><span class="letra">b)</span> 35 días</label>
+            <label><input type="radio" name="q5" value="c"><span class="letra">c)</span> 40 días</label>
+            <label><input type="radio" name="q5" value="d"><span class="letra">d)</span> 45 días</label>
+            <label><input type="radio" name="q5" value="e"><span class="letra">e)</span> 50 días</label>
+    </div>
+    <div class="solucion">
+        <p class="resp-correcta"><strong>Respuesta correcta:</strong> c) 40 días</p>
+        <p class="nota">Las magnitudes son inversamente proporcionales (IP). Quedan 40 − 10 = 30 vacas.</p>
+        <p class="calculo">x = (40 × 30) / 30 = 1200 / 30 = 40</p>
+    </div>
+</article>
+<article class="pregunta" id="p6" data-correcta="c">
+    <h4>Pregunta 6</h4>
+    <p class="enunciado">Un grifo arroja 18 litros de agua por minuto y tarda 14 horas en llenar un tanque. ¿Cuánto tardará en llenarse el mismo tanque si el caudal del grifo se regula a 21 litros por minuto?</p>
+    <div class="opciones">
+            <label><input type="radio" name="q6" value="a"><span class="letra">a)</span> 10 horas</label>
+            <label><input type="radio" name="q6" value="b"><span class="letra">b)</span> 11 horas</label>
+            <label><input type="radio" name="q6" value="c"><span class="letra">c)</span> 12 horas</label>
+            <label><input type="radio" name="q6" value="d"><span class="letra">d)</span> 15 horas</label>
+            <label><input type="radio" name="q6" value="e"><span class="letra">e)</span> 16,3 horas</label>
+    </div>
+    <div class="solucion">
+        <p class="resp-correcta"><strong>Respuesta correcta:</strong> c) 12 horas</p>
+        <p class="nota">Las magnitudes son inversamente proporcionales (IP). A mayor caudal, menos tiempo.</p>
+        <p class="calculo">x = (18 × 14) / 21 = 252 / 21 = 12</p>
+    </div>
+</article>
+<article class="pregunta" id="p7" data-correcta="b">
+    <h4>Pregunta 7</h4>
+    <p class="enunciado">En una fábrica textil, una máquina produce 240 polos en 5 horas. ¿Cuántos polos producirá la misma máquina trabajando 8 horas continuas al mismo ritmo?</p>
+    <div class="opciones">
+            <label><input type="radio" name="q7" value="a"><span class="letra">a)</span> 360 polos</label>
+            <label><input type="radio" name="q7" value="b"><span class="letra">b)</span> 384 polos</label>
+            <label><input type="radio" name="q7" value="c"><span class="letra">c)</span> 400 polos</label>
+            <label><input type="radio" name="q7" value="d"><span class="letra">d)</span> 420 polos</label>
+            <label><input type="radio" name="q7" value="e"><span class="letra">e)</span> 480 polos</label>
+    </div>
+    <div class="solucion">
+        <p class="resp-correcta"><strong>Respuesta correcta:</strong> b) 384 polos</p>
+        <p class="nota">Las magnitudes son directamente proporcionales (DP).</p>
+        <p class="calculo">x = (240 × 8) / 5 = 1920 / 5 = 384</p>
+    </div>
+</article>
+<article class="pregunta" id="p8" data-correcta="c">
+    <h4>Pregunta 8</h4>
+    <p class="enunciado">Un barco lleva víveres para 24 tripulantes durante 18 días. Si antes de zarpar se suman 3 tripulantes más, ¿cuántos días durarán los víveres manteniendo la misma ración diaria?</p>
+    <div class="opciones">
+            <label><input type="radio" name="q8" value="a"><span class="letra">a)</span> 14 días</label>
+            <label><input type="radio" name="q8" value="b"><span class="letra">b)</span> 15 días</label>
+            <label><input type="radio" name="q8" value="c"><span class="letra">c)</span> 16 días</label>
+            <label><input type="radio" name="q8" value="d"><span class="letra">d)</span> 17 días</label>
+            <label><input type="radio" name="q8" value="e"><span class="letra">e)</span> 20 días</label>
+    </div>
+    <div class="solucion">
+        <p class="resp-correcta"><strong>Respuesta correcta:</strong> c) 16 días</p>
+        <p class="nota">Las magnitudes son inversamente proporcionales (IP). Ahora son 24 + 3 = 27 tripulantes.</p>
+        <p class="calculo">x = (24 × 18) / 27 = 432 / 27 = 16</p>
+    </div>
+</article>
+<article class="pregunta" id="p9" data-correcta="c">
+    <h4>Pregunta 9</h4>
+    <p class="enunciado">Si 250 gramos de queso fresco cuestan S/ 6,50, ¿cuánto costarán 1,5 kilogramos del mismo queso?</p>
+    <div class="opciones">
+            <label><input type="radio" name="q9" value="a"><span class="letra">a)</span> S/ 32,50</label>
+            <label><input type="radio" name="q9" value="b"><span class="letra">b)</span> S/ 36,00</label>
+            <label><input type="radio" name="q9" value="c"><span class="letra">c)</span> S/ 39,00</label>
+            <label><input type="radio" name="q9" value="d"><span class="letra">d)</span> S/ 42,50</label>
+            <label><input type="radio" name="q9" value="e"><span class="letra">e)</span> S/ 45,00</label>
+    </div>
+    <div class="solucion">
+        <p class="resp-correcta"><strong>Respuesta correcta:</strong> c) S/ 39,00</p>
+        <p class="nota">Las magnitudes son directamente proporcionales (DP). Se convierte 1,5 kg = 1 500 g.</p>
+        <p class="calculo">x = (6,5 × 1500) / 250 = 9750 / 250 = 39</p>
+    </div>
+</article>
+<article class="pregunta" id="p10" data-correcta="d">
+    <h4>Pregunta 10</h4>
+    <p class="enunciado">Un pintor tarda 9 horas en pintar una pared cuadrada de 3 metros de lado. ¿Cuánto tiempo tardará en pintar otra pared cuadrada de 6 metros de lado, trabajando con la misma eficiencia?</p>
+    <div class="opciones">
+            <label><input type="radio" name="q10" value="a"><span class="letra">a)</span> 18 horas</label>
+            <label><input type="radio" name="q10" value="b"><span class="letra">b)</span> 24 horas</label>
+            <label><input type="radio" name="q10" value="c"><span class="letra">c)</span> 27 horas</label>
+            <label><input type="radio" name="q10" value="d"><span class="letra">d)</span> 36 horas</label>
+            <label><input type="radio" name="q10" value="e"><span class="letra">e)</span> 45 horas</label>
+    </div>
+    <div class="solucion">
+        <p class="resp-correcta"><strong>Respuesta correcta:</strong> d) 36 horas</p>
+        <p class="nota">El tiempo es proporcional al área de la pared (lado × lado), no al lado.</p>
+        <p class="calculo">x = (9 × 6 × 6) / (3 × 3) = 324 / 9 = 36</p>
+    </div>
+</article>
+<div class="parte"><h3>PARTE II: REGLA DE TRES COMPUESTA (Preguntas 11 al 20)</h3><p>Analiza la relación de proporcionalidad de cada magnitud respecto a la incógnita.</p></div>
+<article class="pregunta" id="p11" data-correcta="c">
+    <h4>Pregunta 11</h4>
+    <p class="enunciado">Si 8 obreros trabajando 6 horas diarias construyen una zanja de 30 metros en 5 días, ¿cuántos días necesitarán 10 obreros trabajando 8 horas diarias para construir una zanja de 60 metros?</p>
+    <div class="opciones">
+            <label><input type="radio" name="q11" value="a"><span class="letra">a)</span> 4 días</label>
+            <label><input type="radio" name="q11" value="b"><span class="letra">b)</span> 5 días</label>
+            <label><input type="radio" name="q11" value="c"><span class="letra">c)</span> 6 días</label>
+            <label><input type="radio" name="q11" value="d"><span class="letra">d)</span> 7 días</label>
+            <label><input type="radio" name="q11" value="e"><span class="letra">e)</span> 8 días</label>
+    </div>
+    <div class="solucion">
+        <p class="resp-correcta"><strong>Respuesta correcta:</strong> c) 6 días</p>
+        <p class="nota">Los días son DP a los metros de zanja e IP al número de obreros y a las horas diarias.</p>
+        <p class="calculo">x = (5 × 60 × 8 × 6) / (30 × 10 × 8) = 14400 / 2400 = 6</p>
+    </div>
+</article>
+<article class="pregunta" id="p12" data-correcta="d">
+    <h4>Pregunta 12</h4>
+    <p class="enunciado">En una imprenta, 4 máquinas impresoras funcionando 5 horas diarias imprimen 12 000 folletos en 3 días. ¿Cuántos folletos imprimirán 6 máquinas funcionando 4 horas diarias durante 5 días?</p>
+    <div class="opciones">
+            <label><input type="radio" name="q12" value="a"><span class="letra">a)</span> 18 000</label>
+            <label><input type="radio" name="q12" value="b"><span class="letra">b)</span> 20 000</label>
+            <label><input type="radio" name="q12" value="c"><span class="letra">c)</span> 22 000</label>
+            <label><input type="radio" name="q12" value="d"><span class="letra">d)</span> 24 000</label>
+            <label><input type="radio" name="q12" value="e"><span class="letra">e)</span> 25 000</label>
+    </div>
+    <div class="solucion">
+        <p class="resp-correcta"><strong>Respuesta correcta:</strong> d) 24 000</p>
+        <p class="nota">Los folletos son DP al número de máquinas, a las horas diarias y a los días.</p>
+        <p class="calculo">x = (12000 × 6 × 4 × 5) / (4 × 5 × 3) = 1440000 / 60 = 24000</p>
+    </div>
+</article>
+<article class="pregunta" id="p13" data-correcta="b">
+    <h4>Pregunta 13</h4>
+    <p class="enunciado">Para alimentar a 12 caballos durante 15 días se necesitan 270 kg de avena. ¿Cuántos kilogramos de avena se necesitarán para alimentar a 20 caballos durante 8 días?</p>
+    <div class="opciones">
+            <label><input type="radio" name="q13" value="a"><span class="letra">a)</span> 210 kg</label>
+            <label><input type="radio" name="q13" value="b"><span class="letra">b)</span> 240 kg</label>
+            <label><input type="radio" name="q13" value="c"><span class="letra">c)</span> 250 kg</label>
+            <label><input type="radio" name="q13" value="d"><span class="letra">d)</span> 270 kg</label>
+            <label><input type="radio" name="q13" value="e"><span class="letra">e)</span> 300 kg</label>
+    </div>
+    <div class="solucion">
+        <p class="resp-correcta"><strong>Respuesta correcta:</strong> b) 240 kg</p>
+        <p class="nota">La avena es DP al número de caballos y a los días.</p>
+        <p class="calculo">x = (270 × 20 × 8) / (12 × 15) = 43200 / 180 = 240</p>
+    </div>
+</article>
+<article class="pregunta" id="p14" data-correcta="d">
+    <h4>Pregunta 14</h4>
+    <p class="enunciado">Una cuadrilla de 15 carpinteros fabrican 60 sillas en 12 días trabajando 8 horas diarias. ¿Cuántos carpinteros se necesitan para fabricar 90 sillas en 9 días trabajando 10 horas diarias?</p>
+    <div class="opciones">
+            <label><input type="radio" name="q14" value="a"><span class="letra">a)</span> 18 carpinteros</label>
+            <label><input type="radio" name="q14" value="b"><span class="letra">b)</span> 20 carpinteros</label>
+            <label><input type="radio" name="q14" value="c"><span class="letra">c)</span> 22 carpinteros</label>
+            <label><input type="radio" name="q14" value="d"><span class="letra">d)</span> 24 carpinteros</label>
+            <label><input type="radio" name="q14" value="e"><span class="letra">e)</span> 25 carpinteros</label>
+    </div>
+    <div class="solucion">
+        <p class="resp-correcta"><strong>Respuesta correcta:</strong> d) 24 carpinteros</p>
+        <p class="nota">Los carpinteros son DP a la cantidad de sillas e IP a los días y a las horas diarias.</p>
+        <p class="calculo">x = (15 × 90 × 12 × 8) / (60 × 9 × 10) = 129600 / 5400 = 24</p>
+    </div>
+</article>
+<article class="pregunta" id="p15" data-correcta="c">
+    <h4>Pregunta 15</h4>
+    <p class="enunciado">Cinco autobuses transportan a 400 pasajeros en 4 viajes. ¿Cuántos viajes necesitarán 2 autobuses de la misma capacidad para transportar a 300 pasajeros?</p>
+    <div class="opciones">
+            <label><input type="radio" name="q15" value="a"><span class="letra">a)</span> 5 viajes</label>
+            <label><input type="radio" name="q15" value="b"><span class="letra">b)</span> 6 viajes</label>
+            <label><input type="radio" name="q15" value="c"><span class="letra">c)</span> 7,5 viajes</label>
+            <label><input type="radio" name="q15" value="d"><span class="letra">d)</span> 8 viajes</label>
+            <label><input type="radio" name="q15" value="e"><span class="letra">e)</span> 10 viajes</label>
+    </div>
+    <div class="solucion">
+        <p class="resp-correcta"><strong>Respuesta correcta:</strong> c) 7,5 viajes</p>
+        <p class="nota">Los viajes son DP a los pasajeros e IP al número de autobuses.</p>
+        <p class="calculo">x = (4 × 300 × 5) / (400 × 2) = 6000 / 800 = 7,5</p>
+    </div>
+</article>
+<article class="pregunta" id="p16" data-correcta="b">
+    <h4>Pregunta 16</h4>
+    <p class="enunciado">Si 12 agricultores siembran un terreno de 800 m² en 6 días trabajando 5 horas diarias, ¿cuántas horas diarias deberán trabajar 10 agricultores para sembrar un terreno de 1 200 m² en 9 días?</p>
+    <div class="opciones">
+            <label><input type="radio" name="q16" value="a"><span class="letra">a)</span> 5 horas</label>
+            <label><input type="radio" name="q16" value="b"><span class="letra">b)</span> 6 horas</label>
+            <label><input type="radio" name="q16" value="c"><span class="letra">c)</span> 7 horas</label>
+            <label><input type="radio" name="q16" value="d"><span class="letra">d)</span> 8 horas</label>
+            <label><input type="radio" name="q16" value="e"><span class="letra">e)</span> 9 horas</label>
+    </div>
+    <div class="solucion">
+        <p class="resp-correcta"><strong>Respuesta correcta:</strong> b) 6 horas</p>
+        <p class="nota">Las horas diarias son DP al área e IP al número de agricultores y a los días.</p>
+        <p class="calculo">x = (5 × 1200 × 12 × 6) / (800 × 10 × 9) = 432000 / 72000 = 6</p>
+    </div>
+</article>
+<article class="pregunta" id="p17" data-correcta="c">
+    <h4>Pregunta 17</h4>
+    <p class="enunciado">Tres bombas de agua idénticas trabajando 6 horas diarias llenan una piscina de 180 m³ en 4 días. ¿En cuántos días 4 bombas iguales trabajando 9 horas diarias llenarán una piscina de 360 m³?</p>
+    <div class="opciones">
+            <label><input type="radio" name="q17" value="a"><span class="letra">a)</span> 2 días</label>
+            <label><input type="radio" name="q17" value="b"><span class="letra">b)</span> 3 días</label>
+            <label><input type="radio" name="q17" value="c"><span class="letra">c)</span> 4 días</label>
+            <label><input type="radio" name="q17" value="d"><span class="letra">d)</span> 5 días</label>
+            <label><input type="radio" name="q17" value="e"><span class="letra">e)</span> 6 días</label>
+    </div>
+    <div class="solucion">
+        <p class="resp-correcta"><strong>Respuesta correcta:</strong> c) 4 días</p>
+        <p class="nota">Los días son DP al volumen e IP al número de bombas y a las horas diarias.</p>
+        <p class="calculo">x = (4 × 360 × 3 × 6) / (180 × 4 × 9) = 25920 / 6480 = 4</p>
+    </div>
+</article>
+<article class="pregunta" id="p18" data-correcta="c">
+    <h4>Pregunta 18</h4>
+    <p class="enunciado">Un grupo de 18 digitadores escriben un libro de 360 páginas en 10 días trabajando 6 horas diarias. ¿Cuántas páginas escribirán 15 digitadores en 12 días trabajando 8 horas diarias?</p>
+    <div class="opciones">
+            <label><input type="radio" name="q18" value="a"><span class="letra">a)</span> 420 páginas</label>
+            <label><input type="radio" name="q18" value="b"><span class="letra">b)</span> 450 páginas</label>
+            <label><input type="radio" name="q18" value="c"><span class="letra">c)</span> 480 páginas</label>
+            <label><input type="radio" name="q18" value="d"><span class="letra">d)</span> 500 páginas</label>
+            <label><input type="radio" name="q18" value="e"><span class="letra">e)</span> 540 páginas</label>
+    </div>
+    <div class="solucion">
+        <p class="resp-correcta"><strong>Respuesta correcta:</strong> c) 480 páginas</p>
+        <p class="nota">Las páginas son DP al número de digitadores, a los días y a las horas diarias.</p>
+        <p class="calculo">x = (360 × 15 × 12 × 8) / (18 × 10 × 6) = 518400 / 1080 = 480</p>
+    </div>
+</article>
+<article class="pregunta" id="p19" data-correcta="c">
+    <h4>Pregunta 19</h4>
+    <p class="enunciado">Diez costureras confeccionan 80 camisas en 4 días trabajando 6 horas diarias. Si se retiran 2 costureras y las restantes trabajan 8 horas diarias, ¿cuántos días tardarán en confeccionar 120 camisas?</p>
+    <div class="opciones">
+            <label><input type="radio" name="q19" value="a"><span class="letra">a)</span> 4,5 días</label>
+            <label><input type="radio" name="q19" value="b"><span class="letra">b)</span> 5 días</label>
+            <label><input type="radio" name="q19" value="c"><span class="letra">c)</span> 5,625 días</label>
+            <label><input type="radio" name="q19" value="d"><span class="letra">d)</span> 6 días</label>
+            <label><input type="radio" name="q19" value="e"><span class="letra">e)</span> 6,5 días</label>
+    </div>
+    <div class="solucion">
+        <p class="resp-correcta"><strong>Respuesta correcta:</strong> c) 5,625 días</p>
+        <p class="nota">Quedan 10 − 2 = 8 costureras. Los días son DP a las camisas e IP al número de costureras y a las horas diarias.</p>
+        <p class="calculo">x = (4 × 120 × 10 × 6) / (80 × 8 × 8) = 28800 / 5120 = 5,625</p>
+    </div>
+</article>
+<article class="pregunta" id="p20" data-correcta="c">
+    <h4>Pregunta 20</h4>
+    <p class="enunciado">Doce obreros pueden hacer una obra en 15 días trabajando 8 horas diarias. Después de 5 días de trabajo se retiran 4 obreros y los restantes deciden trabajar 10 horas diarias para terminar lo que falta. ¿En cuántos días en total se terminó toda la obra?</p>
+    <div class="opciones">
+            <label><input type="radio" name="q20" value="a"><span class="letra">a)</span> 12 días</label>
+            <label><input type="radio" name="q20" value="b"><span class="letra">b)</span> 15 días</label>
+            <label><input type="radio" name="q20" value="c"><span class="letra">c)</span> 17 días</label>
+            <label><input type="radio" name="q20" value="d"><span class="letra">d)</span> 18 días</label>
+            <label><input type="radio" name="q20" value="e"><span class="letra">e)</span> 20 días</label>
+    </div>
+    <div class="solucion">
+        <p class="resp-correcta"><strong>Respuesta correcta:</strong> c) 17 días</p>
+        <p class="nota">La obra se resuelve en dos etapas, usando el trabajo medido en horas-obrero.</p>
+        <p class="calculo">Trabajo total: 12 × 15 × 8 = 1440 horas-obrero.<br>En 5 días se hizo: 12 × 5 × 8 = 480. Falta: 1440 − 480 = 960.<br>Ahora trabajan 8 obreros × 10 h = 80 por día: 960 / 80 = 12 días.<br>Total: 5 + 12 = 17 días.</p>
+    </div>
+</article>
+
+        <div id="resultado" class="resultado-examen" aria-live="polite" tabindex="-1">
+            <p class="etiqueta">Tu nota</p>
+            <p class="nota-final"><span id="puntaje">0</span> / 20</p>
+            <p id="mensaje-resultado" class="mensaje-resultado"></p>
+            <p id="repasar" class="repasar"></p>
+        </div>
+
+        <div class="examen-acciones">
+            <button class="boton-enviar" type="submit" id="calificar">Calificar examen</button>
+            <button class="boton-secundario" type="button" id="reiniciar-examen">Reiniciar</button>
+        </div>
+    </form>
+</section>
+</main>
+
+<footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-column">
+            <h3 class="footer-title">ENCORE Blog</h3>
+            <p>Un espacio educativo dedicado al aprendizaje y desarrollo de conocimientos matemáticos mediante recursos digitales e interactivos.</p>
+            <a href="index.html" class="footer-link">Conoce nuestro proyecto →</a>
+        </div>
+        <div class="footer-column">
+            <h3 class="footer-title">Contáctanos</h3>
+            <ul class="footer-list">
+                <li><span class="footer-icon">👥</span>Grupo N° 4</li>
+                <li><span class="footer-icon">📚</span>Proyecto académico</li>
+                <li><span class="footer-icon">🏛️</span>Universidad Privada de Trujillo</li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3 class="footer-title">Información</h3>
+            <ul class="footer-list">
+                <li><a href="index.html">Sobre ENCORE</a></li>
+                <li><a href="contenido.html">Contenido del curso</a></li>
+                <li><a href="recursos.html">Recursos educativos</a></li>
+                <li><a href="ejemplos.html">Desarrollo de ejemplos</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3 class="footer-title">Enlaces de Interés</h3>
+            <ul class="footer-list">
+                <li><a href="recursos.html">Fórmulas matemáticas</a></li>
+                <li><a href="ejemplos.html">Ejercicios resueltos</a></li>
+                <li><a href="ejercicios.html">Practica lo aprendido</a></li>
+                <li><a href="videos.html">Videos educativos</a></li>
+                <li><a href="examen.html">Pon a prueba tus resultados</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="footer-bottom-container">
+            <div class="footer-academic">
+                <p><strong>Trabajo Académico</strong></p>
+                <p>Desarrollado por: Grupo N° 4</p>
+                <p>Curso: Desarrollo de Entornos Web</p>
+                <p>Universidad Privada de Trujillo</p>
+            </div>
+            <div class="footer-copyright">
+                <p>ENCORE | Grupo 4</p>
+                <p>&copy; 2026 - Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
